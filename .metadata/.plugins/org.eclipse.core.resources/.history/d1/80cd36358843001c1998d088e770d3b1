@@ -1,0 +1,10 @@
+package ttd;
+
+public class PrimeNumCheck {
+
+	public Object isPrime(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

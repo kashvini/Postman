@@ -1,0 +1,23 @@
+package junits
+;
+import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+
+public class FirstJunit {
+ @BeforeEach
+public void Method1() {
+	 
+	 System.out.println("Inside of Before  Method");
+ }
+	
+	
+@Test
+	public void test1() {
+		System.out.println("Inside Test");
+	}
+@AfterEach
+ public void Method2() {
+	System.out.println("Inside of After Method");
+}
+}

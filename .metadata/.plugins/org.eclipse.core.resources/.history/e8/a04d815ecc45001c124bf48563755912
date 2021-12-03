@@ -1,0 +1,11 @@
+package junits;
+
+import org.junit.Test;
+
+public class FirstJunit {
+
+	@Test
+	public void test1() {
+		System.out.println("Inside Test");
+	}
+}

@@ -1,0 +1,17 @@
+package test;
+
+
+import org.testng.annotations.Test;
+public class Testcase1 extends Baseclass {
+	
+@Test(description="This test case is to test home functionaltity")
+public void HomeLoanTest() {
+	System.out.println("Inside Home Loan");
+}
+
+@Test( description ="Test case is to car functionaltity " )
+public void CarLoanTest()
+{
+	System.out.println("inside Car Loan");
+}
+}

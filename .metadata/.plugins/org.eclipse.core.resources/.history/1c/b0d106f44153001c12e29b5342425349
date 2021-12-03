@@ -1,0 +1,23 @@
+package RestAPIBBD;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class GetRequset{
+	@Test
+	 public void GetCall{
+		RestAssured.given()
+		           .baseUri("https://localhost:700")
+		           .when()
+		           .get("/employees")
+		           .then()
+		           .statusCode(200)
+		           .log()
+		           .all();
+	}
+		}
+		
+		
+
+

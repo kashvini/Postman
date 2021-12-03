@@ -1,0 +1,14 @@
+package test;
+
+public class Stringexample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String Fname="ashvini";
+		String Lname="kunchala";
+		String Fulname= Fname + " " + Lname;
+		System.out.println("Full name is"+"Fullnmae");
+
+	}
+
+}

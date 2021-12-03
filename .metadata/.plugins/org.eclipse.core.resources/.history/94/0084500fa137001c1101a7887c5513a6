@@ -1,0 +1,31 @@
+package Page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import test.Baseclass;
+
+public class LoginPage {
+	
+	WebDriver driver = Baseclass.driver;
+	
+	public void Login(String Uname, String Pwd) {
+		WebElement LoginLink = driver.findElement(By.linkText("Log in"));
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOf(LoginLink));
+		LoginLink.click();
+		WebElement UserName = driver.findElement(By.name("user_login"));
+		UserName.sendKeys(Uname);
+		WebElement Password = driver.findElement(By.id("password"));
+		Password.sendKeys(Pwd);
+		WebElement Rememeber =driver.findElement(By.className("rememberMe"));
+	    Rememeber.click();
+		WebElement LoginButton = driver.findElement(By.name("btn_login"));
+		LoginButton.click();
+		
+	}
+	
+
+}

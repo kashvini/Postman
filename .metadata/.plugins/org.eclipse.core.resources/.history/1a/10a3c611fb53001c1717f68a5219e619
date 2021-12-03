@@ -1,0 +1,46 @@
+package RestAPIBBD;
+
+import java.util.regex.Matcher;
+
+import org.hamcrest.Matchers;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class GetRequset{
+@Test
+ public void GetCall(){
+		RestAssured.given()
+		           .baseUri("https://localhost:700")
+		           .when()
+		           .get("/employees")
+		           .then()
+		           .statusCode(200)
+		           .body("[0] name",Matchers.equalTo("Pankja"))
+		           .log()
+		           .all();
+	}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		
+
+

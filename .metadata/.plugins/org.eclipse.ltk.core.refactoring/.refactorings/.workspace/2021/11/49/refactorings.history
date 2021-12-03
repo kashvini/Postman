@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;RestAssered_maven&apos; to &apos;RestAssured_maven&apos;&#x0A;- Original element: &apos;RestAssered_maven&apos;&#x0A;- Renamed element: &apos;RestAssered_maven&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;RestAssered_maven&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=RestAssered_maven" name="RestAssured_maven" references="true" stamp="1638254067205" version="1.0"/>
+</session>

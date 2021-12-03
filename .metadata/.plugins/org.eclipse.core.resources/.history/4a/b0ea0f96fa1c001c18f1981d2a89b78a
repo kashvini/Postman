@@ -1,0 +1,17 @@
+package test;
+import java.util.ArrayList;
+
+public class Listexample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub  
+		ArrayList<String> list = new ArrayList <String> ();
+		list.add("Ashvini");
+		list.add("Kunchala");
+		System.out.println(list);
+	 System.out.println(list.get(2));
+		
+
+	}
+
+}

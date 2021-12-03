@@ -1,0 +1,25 @@
+package restAPI;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+@Test
+public class GetRequest {
+    
+    public void GetCall() {
+        
+        RestAssured.baseURI = "http://localhost:7000";
+        
+        RequestSpecification request = RestAssured.given();
+        
+        Response response = request.get("/employees");
+        String ResponseBody = response.body().asString();
+        System.out.println(ResponseBody);
+    }
+}
+        
+    
